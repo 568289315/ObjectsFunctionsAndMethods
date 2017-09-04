@@ -5,11 +5,11 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
          their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 #   For objects that are CONSTRUCTED, we use the DOT notation
@@ -80,6 +80,9 @@ def main():
     turtle = rg.SimpleTurtle('square')
     draw_many_squares(turtle, 3, 75, 15)
     turtle3()
+    try_methods()
+    try_functions()
+    try_methods_and_functions()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
 
@@ -114,11 +117,11 @@ def jump_and_move_turtle(x1, y1, x2, y2):
 def draw_many_squares(my_turtle, number_of_squares, size, twist):
     """
     Makes the given   SimpleTurtle   object draw:
-      -- many squares (how many? answer: NUMBER_OF_SQUARES)
+      -- many squares (how many? answer: 3)
     where each square:
-      -- has the same size (what size? answer: SIZE)
+      -- has the same size (what size? answer: 75)
     and each square is:
-      -- "twisted" a bit from the previous one (how much? TWIST degrees)
+      -- "twisted" a bit from the previous one (how much? 15 degrees)
 
     NOTE: The 3 lines below that begin with   :type   are called
     "type hints".  They make the "dot" trick work more effectively.
@@ -162,6 +165,14 @@ def turtle3():
 
 
 def try_methods():
+    hh = rg.SimpleTurtle()
+    hh.pen = rg.Pen('brown',5)
+    hh.forward(150)
+    hh.left(90)
+    hh.forward(50)
+    hh.backward(100)
+
+
     """
     Constructs a SimpleTurtle and sets its   pen   to a new rg.Pen
     that is 'brown' with thickness 5.
@@ -172,13 +183,16 @@ def try_methods():
       -- backward  100 units
     """
     ####################################################################
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).
     ####################################################################
 
 
 def try_functions():
+    jump_and_move_turtle(200,100,300,30)
+    jump_and_move_turtle(100,200,0,0)
+    jump_and_move_turtle(-50,50,100,100)
     """
     Causes several SimpleTurtles to do the following:
      -- One jumps to (200, 100), then moves (while drawing) to (300, 30)
@@ -186,7 +200,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ####################################################################
-    # TODO: 4. Implement this function, per its doc-string above.
+    # DONE: 4. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -200,6 +214,21 @@ def try_functions():
 
 
 def try_methods_and_functions():
+    lanxi = rg.SimpleTurtle()
+    lanxi.pen = rg.Pen('blue',5)
+    lanxi.backward(150)
+    lanxi.speed = 1
+    draw_many_squares(lanxi,2,100,30)
+    lanxi.speed = 5
+    lanxi.pen = rg.Pen('red',5)
+    draw_many_squares(lanxi,10,50,15)
+    lanxi.speed = 100
+    lanxi.pen = rg.Pen('red',35)
+    draw_many_squares(lanxi,8,300,60)
+    lanxi.pen = rg.Pen('black',3)
+    lanxi.backward(200)
+    lanxi.draw_circle(30)
+    lanxi.draw_square(50)
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
     that is 'blue' with thickness 5.
@@ -232,7 +261,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
