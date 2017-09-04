@@ -125,18 +125,18 @@ def turtle5():
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ the code above.  Be sure you understand:
-#     -- How many functions are defined above?
+#     -- How many functions are defined above? 4
 #           (Answer: 4)
 #     -- For each function definition:
-#          -- Where does that function definition begin?
-#             Where does it end?
-#     -- How many times does   main   call the   turtle1   function?
+#          -- Where does that function definition begin? 27 45 60 91 107 114
+#             Where does it end? 42 57 88 104 111 123
+#     -- How many times does   main   call the   turtle1   function? 1
 #            (Answer: 1)
-#     -- How many times does   main   call the   turtle2   function?
+#     -- How many times does   main   call the   turtle2   function? 2
 #            (Hint: the answer is NOT 1.)
-#     -- What line of code calls the   main   function?
+#     -- What line of code calls the   main   function? 245
 #            (Answer: look at the LAST line of this module, far below.)
 #
 #     ** ASK QUESTIONS if you are uncertain. **
