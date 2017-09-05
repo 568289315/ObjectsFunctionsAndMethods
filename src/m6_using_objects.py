@@ -17,6 +17,7 @@ def main():
 
 
 def two_circles():
+    window = rg.RoseWindow()
     """
     -- Constructs an rg.RoseWindow.
     -- Constructs and draws two rg.Circle objects on the window
